@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_catelog/home_page.dart';
+import 'package:flutter_catelog/Pages/home_page.dart';
+
+import 'Pages/login_page.dart';
 
 void main(List<String> args) {
   runApp(MyApp());
 }
-/*double pi = 3.14;
-    bool isGood = true;
-    num temp = 30.5;
-
-    var day = "Tuesday";
-    const pi = 3.14;
-    final 
-    */
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -19,7 +13,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      darkTheme: ThemeData(brightness: Brightness.dark),
+      routes: {
+        "/": (context) => LoginPage(),
+        "/home": (context) => HomePage(),
+        "/login": (context) => LoginPage(),
+      },
     );
     // ignore: non_constant_identifier_names
     //int My = 30;

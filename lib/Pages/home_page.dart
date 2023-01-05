@@ -4,7 +4,7 @@ class HomePage extends StatelessWidget {
   final String name1 = "new app";
   final String name = "Sunny";
 
-  //const HomePage({super.key});
+  const HomePage({super.key});
 
   //HomePage({super.key});
   //const HomePage({super.key});
