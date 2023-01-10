@@ -1,4 +1,7 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_catelog/utils/routes.dart';
 //import 'package:flutter_catalog/utils/routes.dart';
 
 class LoginPage extends StatelessWidget {
@@ -21,7 +24,7 @@ class LoginPage extends StatelessWidget {
               Text(
                 "Welcome",
                 style: TextStyle(
-                  fontSize: 28,
+                  fontSize: 35,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -49,10 +52,14 @@ class LoginPage extends StatelessWidget {
                     SizedBox(
                       height: 40.0,
                     ),
+                    // ignore: prefer_const_constructors
+
                     ElevatedButton(
                       child: Text("Login"),
                       style: TextButton.styleFrom(minimumSize: Size(150, 40)),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, MyRoutes.homeRoute);
+                      },
                     )
                   ],
                 ),
