@@ -1,10 +1,11 @@
 //import 'dart:html';
+// ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:flutter_catelog/utils/routes.dart';
 
 class LoginPage extends StatefulWidget {
-  //const LoginPage({super.key});
+  const LoginPage({super.key});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -24,6 +25,7 @@ class _LoginPageState extends State<LoginPage> {
     }
 
     await Future.delayed(Duration(seconds: 1));
+    // ignore: use_build_context_synchronously
     await Navigator.pushNamed(context, MyRoutes.homeRoute);
     setState(() {
       changeButton = false;
@@ -77,7 +79,6 @@ class _LoginPageState extends State<LoginPage> {
                           setState(() {});
                         },
                       ),
-
                       TextFormField(
                         obscureText: true,
                         decoration: InputDecoration(
@@ -96,8 +97,6 @@ class _LoginPageState extends State<LoginPage> {
                       SizedBox(
                         height: 40.0,
                       ),
-                      // ignore: prefer_const_constructors
-
                       Material(
                         color: Colors.deepPurple,
                         borderRadius:

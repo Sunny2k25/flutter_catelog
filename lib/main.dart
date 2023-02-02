@@ -4,6 +4,7 @@ import 'package:flutter_catelog/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'Pages/login_page.dart';
+// ignore_for_file: prefer_const_constructors
 
 void main(List<String> args) {
   runApp(MyApp());

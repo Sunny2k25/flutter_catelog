@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ignore_for_file: prefer_const_constructors
 
 class HomePage extends StatelessWidget {
   final String name1 = "new app";
