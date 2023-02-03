@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../widgets/drawer.dart';
 // ignore_for_file: prefer_const_constructors
 
 class HomePage extends StatelessWidget {
@@ -19,7 +21,7 @@ class HomePage extends StatelessWidget {
           child: Text("Welcome in My $name1 by $name"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
